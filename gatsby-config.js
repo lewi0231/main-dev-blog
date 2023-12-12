@@ -8,5 +8,22 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
+  plugins: [
+    'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `notes`,
+        // Path to the directory
+        path: `${__dirname}/src/projects/`,
+      },
+    },
+  ],
+  siteMetadata: {
+    title: 'Web Wondering',
+    description: 'portfolio',
+    copyright: 'this is copyright message',
+  },
+  contact: 'me@thisisanexampleemail.com'
 }
