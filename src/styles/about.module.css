@@ -1,0 +1,19 @@
+.container {
+    padding-top: 50px;
+    height: calc(100vh - 56px);
+}
+
+.container h2 {
+    font-size: 4em;
+    letter-spacing: -0.05em;
+    color: var(--quaternary);
+}
+
+.container p {
+    padding-top: 10px;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: var(--quaternary);
+    opacity: 0.8;
+
+}

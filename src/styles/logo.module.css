@@ -1,0 +1,39 @@
+.container {
+    align-items: center;
+    /* border: var(--secondary) solid 5px; */
+    border-radius: 50%;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    transition: background-color 1s ease;
+    width: 80px;
+    opacity: 0.9;
+    transition: opacity 1s ease;
+    background-color: var(--quaternary);
+    box-shadow: 0 0 20px -10px;
+}
+
+.container:hover {
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+.textWrapper {
+    color: var(--darker-primary);
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 1em;
+    white-space: nowrap;
+}
+
+a:has(.textWrapper) {
+    margin: 0;
+    border: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+.period {
+    color: var(--secondary);
+}

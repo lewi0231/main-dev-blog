@@ -1,17 +1,16 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import '../styles/global.css'
+import Footer from './Footer'
+import Navbar from './Navbar'
 
 export default function Layout({ children }) {
     return (
         <div className='layout'>
             <Navbar />
-            <div className="content">
+            <main className="mainContainer">
                 {children}
-            </div>
-            <footer>
-                <p>Copyright example</p>
-            </footer>
+            </main>
+            <Footer />
         </div>
     )
 }

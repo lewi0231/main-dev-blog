@@ -1,7 +1,8 @@
 ---
 title: Real Kitchen Food
-stack: Gatsby & Shopify
 slug: real-kitchen-food
+tags: ['Shopify']
+summary: This is a short summary of what this article is about
 date: 2021-01-06T00:00:00+00:00
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: Retro Gaming Zone
-stack: Svelte & Firebase
 slug: retro-gaming-zone
+tags: ['Example']
+summary: This is a short summary of what this article is about
 date: 2021-01-08T00:00:00+00:00
 ---
 

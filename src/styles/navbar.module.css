@@ -1,0 +1,30 @@
+.navContainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 3em;
+    width: 95vw;
+}
+
+.navContainer .links {
+    text-align: right;
+}
+
+.navContainer a {
+    margin-left: 20px;
+    font-weight: 400;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+    text-decoration: underline 0.1em var(--darker-primary);
+    text-underline-offset: -1.1em;
+    color: var(--quaternary);
+    font-size: 1em;
+    transition: color 0.3s;
+    transition: text-decoration-color 0.8s;
+}
+
+.navContainer a:hover {
+    color: var(--secondary);
+    text-decoration-color: var(--secondary);
+
+}

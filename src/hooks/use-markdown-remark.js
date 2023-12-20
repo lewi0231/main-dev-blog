@@ -1,21 +1,25 @@
 import { graphql, useStaticQuery } from "gatsby"
 
 export const useMarkdownRemark = () => {
-    const { allMarkdownRemark } = useStaticQuery(
+    const { allMdx } = useStaticQuery(
         graphql`
             query markdownRemarkQuery {
-                allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+                allMdx(sort: {frontmatter: {date: DESC}}) {
                     nodes {
                     frontmatter {
                         slug
                         title
-                        stack
+                        tags
                         date
+                        summary
                     }
                     id
+                    internal {
+                        contentFilePath
+                    }
                     }
                 }
             }
         `)
-    return allMarkdownRemark.nodes
+    return allMdx.nodes
 }
