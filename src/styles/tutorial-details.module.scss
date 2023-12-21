@@ -1,84 +1,105 @@
 .container {
-    display: flex;
-    justify-content: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    max-width: 800px;
     height: 100%;
+    margin: 0 auto;
 
-    .details {
-        max-width: 600px;
+    h2 {
+        color: var(--secondary);
+        font-size: 3.5em;
+        letter-spacing: -2px;
+        line-height: 1em;
+    }
+
+    .mainContent {
+        display: flex;
         padding-top: 2em;
         color: var(--secondary);
 
-        a {
-            text-decoration: none;
-            color: var(--secondary);
-        }
+        .details {
+            padding-right: 3em;
+            width: 80%;
 
-        h2 {
-            color: var(--quaternary);
-            font-size: 3.5em;
-            letter-spacing: -2px;
-            line-height: 1em;
-        }
+            a {
+                text-decoration: none;
+                color: var(--secondary);
+            }
 
-        h3 {
-            margin-top: 0.5em;
-            padding-bottom: 0.3em;
-            color: var(--quaternary);
-            letter-spacing: -1px;
-            font-size: 1.8em;
-        }
 
-        p {
-            padding-bottom: 0.5em;
+            h3 {
+                margin-top: 0.5em;
+                padding-bottom: 0.3em;
+                color: var(--secondary);
+                letter-spacing: -1px;
+                font-size: 1.8em;
+            }
 
-            &:last-of-type {
-                height: 200px;
+            p {
+                padding-bottom: 0.5em;
+
+                &:last-of-type {
+                    height: 200px;
+                }
+
+            }
+
+            ol,
+            ul {
+                padding-bottom: 0.8em;
+                padding-left: 1em;
+            }
+
+
+            h4 {
+                margin-top: 0.8em;
             }
 
         }
 
-        ol,
-        ul {
-            padding-bottom: 0.8em;
-            padding-left: 1em;
-        }
+        .sidebar {
+            width: 20%;
+            margin-top: 1em;
+            position: sticky;
+            top: 0;
+            height: 300px;
 
 
-        h4 {
-            margin-top: 0.8em;
-        }
-    }
+            .tableOfContents {
+                line-height: 2em;
 
-    .tableContainer {
-        border: black solid 1px;
-        width: 10em;
-        margin-top: 10em;
+                li {
+                    list-style: none;
 
-        .tableOfContents {
-            li {
-                list-style: none;
+                    a {
+                        color: var(--secondary-light);
+                        text-decoration-color: var(--tertiary);
+                        padding-bottom: 0.3em;
+                        font-size: 0.8em;
+                        text-decoration: none;
+                        opacity: 0.8;
+                        font-weight: 300;
 
-                a {
-                    color: #36313d;
-                    text-decoration-color: var(--tertiary);
-                    padding-bottom: 0.3em;
-                    font-size: 0.8em;
-                    text-decoration: none;
-                    opacity: 0.7;
-                    font-weight: 300;
+                        &:hover {
+                            text-decoration: underline;
+                            color: var(--tertiary);
+                        }
+                    }
                 }
             }
+
+            h3 {
+                font-size: 0.9em;
+                letter-spacing: 0;
+                opacity: 0.8;
+                padding-bottom: 1em;
+
+
+            }
+
         }
 
-        h3 {
-            font-size: 0.8em;
-            letter-spacing: 0;
-            opacity: 0.8;
-            padding-bottom: 1em;
-        }
     }
+
+
 
 
 

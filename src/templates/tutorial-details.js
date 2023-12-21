@@ -13,22 +13,23 @@ const TutorialDetails = ({ data, children }) => {
     return (
         <Layout>
             <div className={styles.container}>
-
-                <div className={styles.details}>
-                    <h2>{title}</h2>
-                    <div itemProp="articleBody">
-                        {children}
+                <h2>{title}</h2>
+                <div className={styles.mainContent}>
+                    <div className={styles.details}>
+                        <div>
+                            {children}
+                        </div>
                     </div>
-                </div>
-                <div className={styles.tableContainer}>
-                    <h3>TABLE OF CONTENTS</h3>
-                    <ul className={styles.tableOfContents}>
-                        {tableOfContents.map((item, index) => (
-                            <li key={index}>
-                                <a href={item.url}>{item.title}</a>
-                            </li>
-                        ))}
-                    </ul>
+                    <div className={styles.sidebar}>
+                        <h3>TABLE OF CONTENTS</h3>
+                        <ul className={styles.tableOfContents}>
+                            {tableOfContents.map((item, index) => (
+                                <li key={index}>
+                                    <a href={item.url}>{item.title}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </Layout>
