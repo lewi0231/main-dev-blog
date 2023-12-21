@@ -35,7 +35,7 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: 'Logo',
+    title: 'Studio Code',
     description: 'The portfolio blog for Paul Lewis',
     contact: 'paullewis1308@gmail.com'
   },

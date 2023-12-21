@@ -1,0 +1,28 @@
+.container {
+    padding-top: 50px;
+    height: 100vh;
+
+
+    .tutorialsWrapper {
+        display: grid;
+        grid-gap: 2vw;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    h1 {
+        font-size: 4em;
+        letter-spacing: -0.05em;
+        color: var(--secondary);
+    }
+
+    p {
+        padding-top: 10px;
+        font-size: 1em;
+        font-weight: 300;
+        color: var(--tertiary);
+    }
+}

@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import { useMarkdownRemark } from '../../hooks/use-markdown-remark'
-import * as styles from '../../styles/tutorials.module.css'
+import * as styles from '../../styles/tutorials.module.scss'
 import Tutorial from '../Tutorial'
 
 const Tutorials = () => {
@@ -10,11 +10,19 @@ const Tutorials = () => {
 
     return (
 
-        <div id="tutorials" className={styles.tutorialsContainer}>
+        <div id="tutorials" className={styles.container}>
             <h1>Tutorials.</h1>
             <div className={styles.tutorialsWrapper}>
                 {tutorials.map(tutorial => {
-                    return <Link key={tutorial.slug} to={"tutorials/" + tutorial.frontmatter.slug}> <Tutorial tutorial={tutorial.frontmatter} /></Link>
+                    return (
+                        <Link
+                            key={tutorial.slug}
+                            to={"tutorials/" + tutorial.frontmatter.slug}
+                        >
+                            <Tutorial
+                                tutorial={tutorial.frontmatter}
+                            />
+                        </Link>)
                 })}
             </div>
         </div>

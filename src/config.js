@@ -22,6 +22,16 @@ const config = {
             icon: 'instagram', // This should match the key in your Icon component
             url: 'https://linkedin.com/in/paullewis',
         },
+        {
+            name: 'Shopify',
+            icon: 'shopify',
+            url: 'https://community.shopify.com/c/user/viewprofilepage/user-id/1636038'
+        },
+        {
+            name: "Spotify",
+            icon: 'spotify',
+            url: 'https://open.spotify.com/artist/5Sjxm1sfYr74l1iwTGcbJt?si=lzQYU2toQ3uIrHVKEPnOQQ'
+        }
     ]
 }
 
