@@ -8,20 +8,13 @@
 /* CSS Reset */
 :root {
 
-    --primary: #E0D0B8;
-    --other-secondary: #b375ac;
-    --secondary: #FF5D6C;
-    --tertiary: #FBCE3A;
-    --quaternary: #000000;
-    --reddish: #284A27;
-    --mono-font: 'Roboto Mono';
-    --content-font: 'Calibri', 'Inter';
-    --other: #0f0106;
+    --primary: #FFFFFF;
+    --secondary: #000000;
+    --tertiary: #FF5D6C;
 
-    --sandy: #8E9461;
-    /* --darker-pimary: #F4DECB; */
-    --darker-primary: #FFFFFF;
-    --primary-complement: #C2EAC1;
+    --content-font: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --heading-font: 'Inter', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --mono-font: 'Roboto Mono';
 }
 
 *,
@@ -45,6 +38,15 @@ body {
     font-weight: 200;
     display: flex;
     justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
 }
 
 

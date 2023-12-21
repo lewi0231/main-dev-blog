@@ -9,6 +9,10 @@
     color: var(--quaternary);
 }
 
+.container h2 span {
+    text-decoration: underline;
+}
+
 .container p {
     padding-top: 10px;
     font-size: 1.2em;

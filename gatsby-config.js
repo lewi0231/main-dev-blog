@@ -9,6 +9,10 @@
  */
 module.exports = {
   plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-plugin-mdx',
       options:
@@ -32,8 +36,7 @@ module.exports = {
   ],
   siteMetadata: {
     title: 'Logo',
-    description: 'portfolio',
-    copyright: 'this is copyright message',
-    contact: 'me@thisisanexampleemail.com'
+    description: 'The portfolio blog for Paul Lewis',
+    contact: 'paullewis1308@gmail.com'
   },
 }

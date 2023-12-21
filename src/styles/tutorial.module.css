@@ -1,8 +1,8 @@
 .tutorialContainer {
     border-radius: 5px;
-    background-color: var(--secondary);
+    background-color: var(--tertiary);
     height: 270px;
-    box-shadow: 0 0 2px 1px var(--quaternary);
+    box-shadow: 0 0 2px 1px var(--secondary);
     padding: 20px;
     transition: box-shadow 0.5 ease;
     transition: transform 0.3s ease;
@@ -13,13 +13,13 @@
 
 .tutorialContainer:hover {
     transform: translateY(-4px);
-    box-shadow: 0 0 3px 2px var(--quaternary);
+    box-shadow: 0 0 3px 2px var(--secondary);
     cursor: pointer;
     /* background-color: var(--secondary); */
 }
 
 .tutorialContainer h3 {
-    color: var(--quaternary);
+    color: var(--secondary);
     margin-top: 20px;
     opacity: 0.7;
     text-decoration: none;
@@ -30,13 +30,13 @@
 
 
 .tutorialContainer:hover h3 {
-    color: var(--quaternary);
+    color: var(--secondary);
     opacity: 1;
 
 }
 
 .tutorialContainer p {
-    color: var(--quaternary);
+    color: var(--secondary);
     font-size: 1em;
     font-weight: 100px;
     opacity: 0.7;
@@ -56,7 +56,7 @@
 
 .tutorialContainer .leftIcon svg {
     stroke-width: 1px;
-    stroke: var(--darker-primary);
+    stroke: var(--primary);
     opacity: 0.8;
     transition: opacity 0.3s ease;
 }
@@ -70,7 +70,7 @@
 }
 
 .rightIcon svg {
-    stroke: var(--darker-primary);
+    stroke: var(--primary);
     stroke-width: 1px;
     opacity: 0.8;
     transition: opacity 0.5s ease;
@@ -83,7 +83,7 @@
 }
 
 .tags {
-    color: var(--darker-primary);
+    color: var(--primary);
     margin-top: 20px;
     opacity: 0.8;
     font-family: monospace;

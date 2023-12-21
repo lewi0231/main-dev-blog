@@ -29,13 +29,13 @@
     font-weight: 100;
     letter-spacing: 0.2em;
     font-size: 0.8em;
-    color: var(--quaternary);
+    color: var(--secondary);
     text-decoration: none;
 }
 
 .sidebarRight a:hover {
     transform: translateY(-5px);
-    color: var(--secondary);
+    color: var(--tertiary);
     cursor: pointer;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .iconLinkWrapper svg {
-    stroke: var(--quaternary);
+    stroke: var(--secondary);
     stroke-width: 1.8px;
     transition: transform 0.3s ease;
     width: 20px;
@@ -60,6 +60,6 @@
 
 .iconLinkWrapper svg:hover {
     transform: translateY(-5px);
-    stroke: var(--secondary);
+    stroke: var(--tertiary);
     stroke-width: 2px;
 }

@@ -9,8 +9,8 @@
     width: 80px;
     opacity: 0.9;
     transition: opacity 1s ease;
-    background-color: var(--quaternary);
-    box-shadow: 0 0 20px -10px;
+    background-color: var(--tertiary);
+    box-shadow: 0 0 20px -10px var(--secondary);
 }
 
 .container:hover {
@@ -20,7 +20,7 @@
 }
 
 .textWrapper {
-    color: var(--darker-primary);
+    color: var(--secondary);
     font-weight: bold;
     font-size: 2.5em;
     line-height: 1em;
@@ -32,8 +32,4 @@ a:has(.textWrapper) {
     border: none;
     padding: 0;
     text-decoration: none;
-}
-
-.period {
-    color: var(--secondary);
 }
