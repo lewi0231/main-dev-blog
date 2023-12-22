@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby'
 import React from 'react'
+import Button from '../components/Button'
 import Layout from '../components/Layout'
 import * as styles from '../styles/tutorial-details.module.scss'
 
@@ -29,6 +30,7 @@ const TutorialDetails = ({ data, children }) => {
                                 </li>
                             ))}
                         </ul>
+                        <Button buttonText="Need help?" btnSize='small' leftAlign="true" />
                     </div>
                 </div>
             </div>

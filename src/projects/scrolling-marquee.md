@@ -1,10 +1,12 @@
 ---
-title: Create Shopify Dawn Theme Scrolling Marquee
+title: Shopify Scrolling Marquee
 slug: shopify-marquee
 tags: ['Shopify', 'Dawn', 'Marquee']
 summary: I add a scrolling marquee feature to the Dawn Shopify theme.
 date: 2021-01-04T00:00:00+00:00
 ---
+
+import Button from '../components/button.jsx'
 
 ### TLDR
 Feel free to jump straight to the code below.  Note this has not been tested in themes other than the Dawn theme.

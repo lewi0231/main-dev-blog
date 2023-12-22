@@ -1,0 +1,31 @@
+.btnContainer {
+    // Nothing in here right now
+}
+
+.btn {
+    border-radius: 0.5em;
+    background-color: white;
+    border: var(--secondary) solid 2px;
+    color: var(--quaternary);
+    margin-left: 0.2em;
+    margin-top: 1em;
+    padding: 10px;
+    transition: background-color 0.8s ease;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--tertiary);
+    }
+}
+
+.small {
+    font-size: 1em;
+}
+
+.large {
+    font-size: 2em;
+}
+
+.leftAlign {
+    margin-left: 0;
+}

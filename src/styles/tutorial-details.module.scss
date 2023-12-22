@@ -5,7 +5,7 @@
 
     h2 {
         color: var(--secondary);
-        font-size: 3.5em;
+        font-size: 3em;
         letter-spacing: -2px;
         line-height: 1em;
     }
@@ -17,7 +17,7 @@
 
         .details {
             padding-right: 3em;
-            width: 80%;
+            width: 75%;
 
             a {
                 text-decoration: none;
@@ -28,13 +28,15 @@
             h3 {
                 margin-top: 0.5em;
                 padding-bottom: 0.3em;
-                color: var(--secondary);
+                color: var(--secondary-light);
                 letter-spacing: -1px;
-                font-size: 1.8em;
+                font-size: 2em;
             }
 
             p {
                 padding-bottom: 0.5em;
+                font-size: 1.3em;
+                font-weight: 300;
 
                 &:last-of-type {
                     height: 200px;
@@ -44,19 +46,23 @@
 
             ol,
             ul {
+                color: var(--secondary-light);
                 padding-bottom: 0.8em;
                 padding-left: 1em;
+                font-size: 1.2em;
+                font-weight: 300;
             }
 
 
             h4 {
                 margin-top: 0.8em;
+                color: var(--secondary-light);
             }
 
         }
 
         .sidebar {
-            width: 20%;
+            width: 25%;
             margin-top: 1em;
             position: sticky;
             top: 0;
@@ -70,24 +76,24 @@
                     list-style: none;
 
                     a {
-                        color: var(--secondary-light);
+                        color: var(--tertiary);
                         text-decoration-color: var(--tertiary);
-                        padding-bottom: 0.3em;
-                        font-size: 0.8em;
+                        line-height: 2.2em;
+                        font-size: 1.1em;
                         text-decoration: none;
                         opacity: 0.8;
                         font-weight: 300;
 
                         &:hover {
                             text-decoration: underline;
-                            color: var(--tertiary);
+                            color: var(--secondary);
                         }
                     }
                 }
             }
 
             h3 {
-                font-size: 0.9em;
+                font-size: 1.1em;
                 letter-spacing: 0;
                 opacity: 0.8;
                 padding-bottom: 1em;
