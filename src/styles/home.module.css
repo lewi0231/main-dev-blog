@@ -1,9 +1,7 @@
 .contentWrapper {
-    /* max-width: 60vw; */
-    margin-top: 100px;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    padding: 0 20px;
     height: auto;
-
+    margin-top: 1.5em;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    width: 70%;
 }

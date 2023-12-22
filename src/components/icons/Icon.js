@@ -4,6 +4,8 @@ import IconFolder from './IconFolder'
 import IconGithub from './IconGitHub'
 import IconInstagram from './IconInstagram'
 import IconLinkedIn from './IconLinkedIn'
+import IconShopify from './IconShopify'
+import IconSpotify from './IconSpotify'
 import IconX from './IconX'
 
 const Icon = ({ name }) => {
@@ -18,6 +20,10 @@ const Icon = ({ name }) => {
             return <IconInstagram />
         case 'folder':
             return <IconFolder />
+        case 'spotify':
+            return <IconSpotify />
+        case 'shopify':
+            return <IconShopify />
         default:
             return <IconExternal />
     }

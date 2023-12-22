@@ -1,0 +1,30 @@
+.container {
+    padding-top: 4em;
+    height: calc(100vh - 56px);
+
+    h2 {
+        font-size: 6em;
+        letter-spacing: -0.05em;
+        color: var(--secondary);
+
+        span {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        padding-top: 1em;
+        font-size: 1.35em;
+        font-weight: 300;
+        color: var(--secondary);
+
+        a {
+            text-decoration: none;
+            color: var(--tertiary);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

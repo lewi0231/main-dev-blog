@@ -9,7 +9,6 @@ const Tutorials = () => {
     console.log(tutorials)
 
     return (
-
         <div id="tutorials" className={styles.container}>
             <h1>Tutorials.</h1>
             <div className={styles.tutorialsWrapper}>

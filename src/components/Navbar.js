@@ -1,6 +1,6 @@
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
-import * as styles from '../styles/navbar.module.css';
+import * as styles from '../styles/navbar.module.scss';
 import Logo from './Logo';
 export default function Navbar() {
   const data = useStaticQuery(graphql`

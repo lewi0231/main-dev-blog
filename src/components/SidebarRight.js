@@ -1,6 +1,6 @@
 import React from 'react';
 import * as config from '../config';
-import * as styles from '../styles/sidebar.module.css';
+import * as styles from '../styles/sidebar.module.scss';
 
 const SidebarRight = () => {
     const email = config.default.email

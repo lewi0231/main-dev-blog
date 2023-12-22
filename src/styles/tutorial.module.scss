@@ -1,9 +1,9 @@
 .container {
     border-radius: 5px;
     background-color: var(--tertiary);
-    height: 270px;
+    height: 20em;
     box-shadow: 0 0 2px 1px var(--secondary);
-    padding: 20px;
+    padding: 1.5em 1.5em;
     transition: box-shadow 0.5 ease;
     transition: transform 0.3s ease;
     display: flex;
@@ -12,13 +12,19 @@
 
     &:hover {
         transform: translateY(-4px);
-        box-shadow: 0 0 3px 2px var(--secondary);
+        box-shadow: 0 0 3px 2px var(--tertiary);
         cursor: pointer;
 
         h3 {
             color: var(--secondary);
             opacity: 1;
+        }
 
+        .iconsHeader .leftIcon {
+            svg {
+                opacity: 1;
+                stroke-width: 1.3px;
+            }
         }
 
     }
@@ -26,20 +32,20 @@
 
     h3 {
         color: var(--secondary);
-        margin-top: 20px;
-        opacity: 0.7;
-        text-decoration: none;
-        text-decoration: underline;
+        font-size: 1.5em;
         letter-spacing: -1px;
         line-height: 1.2em;
+        margin-top: 10px;
+        opacity: 0.9;
+        text-decoration: underline;
     }
 
 
     p {
         color: var(--secondary);
-        font-size: 0.9em;
-        font-weight: 200;
-        opacity: 0.7;
+        font-size: 1em;
+        font-weight: 300;
+
         letter-spacing: -0.5px;
         line-height: 1.3em;
     }
@@ -60,12 +66,8 @@
                 transition: opacity 0.3s ease;
             }
 
-            &:hover {
-                svg {
-                    opacity: 1;
-                }
-            }
         }
+
 
         .rightIcon {
             padding-top: 3px;
@@ -91,12 +93,12 @@
 
     .tags {
         color: var(--primary);
+        font-family: var(--mono-font);
+        font-size: 1em;
+        letter-spacing: -0.05em;
+        line-height: 1em;
         margin-top: 20px;
         opacity: 0.7;
-        font-family: 'Courier New', Courier, monospace;
-        line-height: 1em;
-        letter-spacing: -0.05em;
-        font-size: 0.9em;
 
     }
 }

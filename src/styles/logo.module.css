@@ -1,6 +1,5 @@
 .container {
     align-items: center;
-    /* border: var(--secondary) solid 5px; */
     border-radius: 50%;
     display: flex;
     height: 80px;
@@ -32,4 +31,8 @@ a:has(.textWrapper) {
     border: none;
     padding: 0;
     text-decoration: none;
+}
+
+.period {
+    /*  */
 }

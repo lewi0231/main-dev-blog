@@ -1,7 +1,18 @@
 import React from 'react'
-import * as styles from '../../styles/about.module.css'
+import * as config from '../../config'
+import * as styles from '../../styles/about.module.scss'
 
 const About = () => {
+    const spotify = config.default.socialMedia.filter((media) => {
+        if (media.name === "Spotify") {
+            return true
+        }
+        return false
+    })
+
+    const spotifyUrl = spotify?.[0]?.url
+
+
     return (
         <section id='about' className={styles.container}>
             <h2>A bit <span>about</span> me.</h2>
@@ -15,7 +26,7 @@ const About = () => {
             </p>
 
             <p>
-                Outside of coding, I'm inspired by nature and music, which influence my approach to technology – thoughtful, user-centric, and innovative.
+                Outside of coding, I'm inspired by nature and music (you can hear some of my music <a href={spotifyUrl} >here</a> - under the pseudonym Decoding Seabirds), which influence my approach to technology – thoughtful, user-centric, and innovative.
             </p>
         </section>
     )

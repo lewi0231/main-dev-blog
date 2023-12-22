@@ -1,20 +1,21 @@
 .footer {
     display: flex;
     justify-content: center;
-    padding: 20px 0;
-    height: 100px;
+    padding: 1.5em 0;
+    height: 5em;
     align-items: flex-end;
 }
 
 .footer p {
-    color: var(--quaternary);
+    color: var(--secondary);
+    font-weight: 400;
 }
 
 .footer a {
     text-decoration: none;
-    color: var(--secondary);
+    color: var(--tertiary);
 }
 
 .footer a:hover {
-    color: black;
+    text-decoration: underline;
 }

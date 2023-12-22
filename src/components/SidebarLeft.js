@@ -1,19 +1,15 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import config from '../config';
-import * as styles from '../styles/sidebar.module.css';
+import * as styles from '../styles/sidebar.module.scss';
 import Icon from './icons/Icon';
 
 export default function SidebarLeft() {
     const icons = config.socialMedia.map(media => {
         return (
             <div className={styles.iconLinkWrapper} key={media.icon}>
-                <Link
-                    to={media.url}
-                    aria-label={media.name}
-                    target="_blank">
-                    <Icon name={media.icon} />
-                </Link>
+                <a href={media.url} id="" aria-label={media.name}
+                    target="_blank" rel='noreferrer'>                    <Icon name={media.icon} /></a>
+
             </div>
         )
     })
