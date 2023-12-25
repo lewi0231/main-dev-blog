@@ -19,19 +19,13 @@
 }
 
 .small {
-    font-size: 1em;
+    font-size: 2vw;
 }
 
 .large {
-    font-size: 2em;
+    font-size: 5vw;
 }
 
 .leftAlign {
     margin-left: 0;
-}
-
-@media (max-width: 800px){
-    .btn {
-        font-size: 1.5em;
-    }
 }

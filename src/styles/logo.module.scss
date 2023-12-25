@@ -1,0 +1,41 @@
+a {
+
+    .container {
+        align-items: center;
+        background-color: var(--secondary);
+        border-radius: 50%;
+        box-shadow: 0 0 20px -10px var(--secondary);
+        display: flex;
+        height: 5em;
+        justify-content: center;
+        opacity: 0.9;
+        transition: background-color 1s ease;
+        transition: opacity 1s ease;
+        width: 5em;
+    
+        &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        
+        }
+        .box {
+            border-left: var(--primary) solid 0.3em;
+            border-bottom: var(--primary) solid 0.3em;
+            height: 50%;
+            width: 50%;
+        }
+    
+        
+    }    
+}
+
+@media (max-width: 800px){
+    a {
+        .container {
+            width: 4em;
+            height: 4em;
+        }
+
+    }
+}
+

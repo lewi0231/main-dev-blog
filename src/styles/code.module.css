@@ -34,3 +34,15 @@ pre {
 .btn:hover {
     background-color: white;
 }
+
+@media (max-width: 800px) {
+    pre {
+        font-size: 0.8em;
+    }
+    @media (max-width: 600px) {
+        pre {
+            font-size: 0.7em;
+        }
+    }
+}
+

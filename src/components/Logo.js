@@ -1,14 +1,14 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import * as styles from '../styles/logo.module.css'
+import * as styles from '../styles/logo.module.scss'
 
-const Logo = ({ text }) => {
+const Logo = () => {
+
     return (
         <Link to="/">
             <div className={styles.container}>
-                <span className={styles.textWrapper}>
-                    lp<span className={styles.period}>.</span>
-                </span>
+                <div className={styles.box}>
+                </div>
             </div>
         </Link>
     )

@@ -22,7 +22,7 @@ const Code = (props) => {
         <Highlight
             code={code}
             language={language}
-            theme={themes.dracula}
+            theme={themes.vs}
         >
             {({ className, style, tokens, getLineProps, getTokenProps }) => (
                 <pre className={className} style={style}>

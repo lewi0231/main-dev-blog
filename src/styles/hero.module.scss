@@ -35,27 +35,8 @@
 
 }
 
+
 @media(max-width: 1200px) {
-    .container {
-        .heroTitle {
-            font-size: 6em;
-        }
-
-        .subtitle {
-            font-size: 6em;
-        }
-
-        p:first-of-type {
-            font-size: 1.2em;
-        }
-
-        .mainText {
-            font-size: 1.5em;
-        }
-    }
-
-
-@media(max-width: 870px) {
     .container {
         .heroTitle {
             font-size: 5em;
@@ -114,6 +95,6 @@
     }
 
 }
-}
+
 
 

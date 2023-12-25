@@ -1,5 +1,6 @@
 .container {
     max-width: 800px;
+    width: 80vw;
     height: 100%;
     margin: 0 auto;
 
@@ -15,13 +16,17 @@
         padding-top: 2em;
         color: var(--secondary);
 
+
         .details {
             padding-right: 3em;
             width: 75%;
 
             a {
-                text-decoration: none;
+                text-decoration: underline;
                 color: var(--secondary);
+                &:hover {
+                    color: var(--tertiary);
+                }    
             }
 
 
@@ -30,12 +35,12 @@
                 padding-bottom: 0.3em;
                 color: var(--secondary-light);
                 letter-spacing: -1px;
-                font-size: 2em;
+                font-size: 1.8em;
             }
 
             p {
                 padding-bottom: 0.5em;
-                font-size: 1.3em;
+                font-size: 1.1em;
                 font-weight: 300;
 
                 &:last-of-type {
@@ -49,7 +54,7 @@
                 color: var(--secondary-light);
                 padding-bottom: 0.8em;
                 padding-left: 1em;
-                font-size: 1.2em;
+                font-size: 1.1em;
                 font-weight: 300;
             }
 
@@ -106,7 +111,130 @@
     }
 
 
+}
 
+@media (max-width: 1000px){
+    .container {
+        padding-top: 2em;
+        h2 {
+            font-size: 2.5em;
+        }
 
+        .mainContent {
+            .details{
+                h3{
+                    font-size: 1.5em;
+                }
+                p {
+                    font-size: 0.9em;
+                }
+                ul, ol {
+                    font-size: 0.95em;
+                }
+            }
+            .sidebar {
+                h3{
+                    font-size: 0.8em;
+                }
 
+                .tableOfContents {
+                    font-size: 0.8em;
+                }
+            }
+            
+        }
+    }
+
+    @media (max-width: 800px){
+        .container {
+
+            h2 {
+                font-size: 2.2em;
+            }
+    
+            .mainContent {
+                .details{
+                    h3{
+                        font-size: 1.5em;
+                    }
+                    p {
+                        font-size: 0.8em;
+                    }
+                    ul, ol {
+                        font-size: 0.8em;
+                    }
+                }
+                .sidebar {
+                    h3{
+                        font-size: 0.7em;
+                    }
+    
+                    .tableOfContents {
+                        font-size: 0.7em;
+                    }
+                }
+                
+            }
+        }
+        @media (max-width: 600px){
+            .container {
+    
+                h2 {
+                    font-size: 2em;
+                }
+        
+                .mainContent {
+                    .details{
+                        h3{
+                            font-size: 1.3em;
+                        }
+                        p {
+                            font-size: 0.7em;
+                        }
+                        ul, ol {
+                            font-size: 0.7em;
+                        }
+                    }
+                    .sidebar {
+                        h3{
+                            font-size: 0.6em;
+                        }
+        
+                        .tableOfContents {
+                            font-size: 0.6em;
+                        }
+                    }
+                    
+                }
+            }
+            @media (max-width: 500px){
+                .container {
+        
+                    h2 {
+                        font-size: 2em;
+                    }
+            
+                    .mainContent {
+                        .details {
+                            padding-right: 1em;
+                            width: 100%;
+                        }
+
+                        .sidebar {
+                            display: none;
+                            width: 0vw;
+                        }
+                        
+                    }
+                }
+                @media (max-width: 300px) {
+                    .container {
+                        h2 {
+                            font-size: 1.8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
