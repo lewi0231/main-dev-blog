@@ -102,3 +102,86 @@
 
     }
 }
+
+@media (max-width: 1000px){
+    .container {
+        height: 17em;
+        h3 {
+            font-size: 1.1em;
+        }
+        p {
+            font-size: 0.9em;
+        }
+        .tags {
+            font-size: 0.8em;
+        }
+
+        .iconsHeader {
+            .leftIcon {
+                svg {
+                    width: 28px;
+                }
+            }
+            .rightIcon {
+                svg {
+                    width: 23px;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 550px){
+        .container {
+            height: 15em;
+            h3 {
+                font-size: 1em;
+            }
+            p {
+                font-size: 0.8em;
+            }
+            .tags {
+                font-size: 0.8em;
+            }
+    
+            .iconsHeader {
+                .leftIcon {
+                    svg {
+                        width: 24px;
+                    }
+                }
+                .rightIcon {
+                    svg {
+                        width: 22px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 400px) {
+            .container {
+                height: 15em;
+                h3 {
+                    font-size: 1em;
+                }
+                p {
+                    font-size: 0.8em;
+                }
+                .tags {
+                    font-size: 0.8em;
+                }
+        
+                .iconsHeader {
+                    .leftIcon {
+                        svg {
+                            width: 25px;
+                        }
+                    }
+                    .rightIcon {
+                        svg {
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

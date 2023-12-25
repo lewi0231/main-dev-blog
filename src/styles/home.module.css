@@ -1,7 +1,13 @@
 .contentWrapper {
     height: auto;
-    margin-top: 1.5em;
+    margin-top: 10vh;
     margin-left: 15vw;
     margin-right: 15vw;
-    width: 70%;
+    width: 70vw;
+}
+
+@media (max-width: 800px) {
+    .contentWrapper {
+        margin-right: 0;
+    }
 }

@@ -29,3 +29,9 @@
 .leftAlign {
     margin-left: 0;
 }
+
+@media (max-width: 800px){
+    .btn {
+        font-size: 1.5em;
+    }
+}

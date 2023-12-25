@@ -4,7 +4,6 @@
     font-family: var(--heading-font);
     justify-content: space-between;
     padding: 2em 3em;
-    top: 0;
     width: 100vw;
 
     a {
@@ -21,10 +20,19 @@
 
         }
     }
+
+    .hamburger {
+        display: none;
+    }
+
+
 }
 
+// This is not currently getting used - TODO
 .sticky {
     position: sticky;
+    top: 0;
+    z-index: 10;
     background-color: rgba(255, 255, 255, 0.5);
     animation-name: colorTransition;
     animation-duration: 1s;
@@ -39,4 +47,81 @@
     to {
         background-color: rgba(255, 255, 255, 0.5);
     }
+}
+
+@media (max-width: 1000px) {
+    .navContainer a {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 870px) {
+    .navContainer {
+        .links {
+            position: fixed;
+            top: 0;
+            left: -100%;
+        }
+        
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            background-color: var(--primary);
+            border: none;
+
+            .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                background-color: #101010;
+            }
+
+
+            &.active {
+                .bar:nth-child(2) {
+                    opacity: 0;
+                }
+                .bar {
+                    &:nth-child(1) {
+                        transform: translateY(8px) rotate(45deg);
+                    }
+                }
+                .bar {
+                    &:nth-child(3) {
+                        transform: translateY(-8px) rotate(-45deg);
+                    }
+                }
+            }
+
+
+        }
+
+
+    }
+
+
+    .links {
+        transition: all 0.3s ease;
+        background-color: white;
+        flex-direction: column;
+        z-index: 999;
+        margin-top: 144px;
+        padding-top: 3em;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        gap: 3em;
+        opacity: 0.2;
+
+        &.active {
+            left: 0;
+            top: 0;
+            opacity: 1;
+        }
+    }
+
 }

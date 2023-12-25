@@ -1,6 +1,6 @@
 .container {
-    padding-top: 4em;
-    height: 100vh;
+    padding-top: 10vh;
+    min-height: 100vh;
 
     .tutorialsWrapper {
         display: grid;
@@ -24,5 +24,29 @@
         font-size: 1em;
         font-weight: 300;
         color: var(--tertiary);
+    }
+}
+
+@media (max-width: 800px ){
+    .container {
+        h1 {
+            font-size: 3em;
+        }
+
+    }
+    @media (max-width: 500px){
+        .container {
+            h1{
+                font-size: 3em;
+            }
+        }
+
+        @media (max-width: 350px){
+            .container {
+                h1{
+                    font-size: 2.5em;
+                }
+            }
+        }
     }
 }

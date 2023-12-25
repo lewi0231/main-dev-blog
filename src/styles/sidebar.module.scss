@@ -67,3 +67,15 @@
         }
     }
 }
+
+
+@media (max-width: 500px) {
+    .sidebarContainer {
+        display: none;
+    }
+
+    .sidebarLeft,
+    .sidebarRight {
+        display: none;
+    }
+}

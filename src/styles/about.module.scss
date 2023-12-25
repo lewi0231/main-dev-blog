@@ -1,6 +1,6 @@
 .container {
-    padding-top: 4em;
-    height: calc(100vh - 56px);
+    padding-top: 10vh;
+    height: 100vh;
 
     h2 {
         font-size: 6em;
@@ -28,3 +28,51 @@
         }
     }
 }
+
+@media (max-width: 1200px){
+    .container {
+
+        h2 {
+            font-size: 5em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    }
+    @media (max-width: 800px){
+        .container {
+            h2 {
+                font-size: 4em;
+            }
+    
+            p {
+                font-size: 1em;
+            }
+
+        }
+        @media (max-width: 575px) {
+            .container {
+                h2 {
+                    font-size: 3em;
+                }
+                p {
+                    font-size: 0.9em;
+                }
+            }
+            @media (max-width: 400px) {
+                .container {
+                    h2 {
+                        font-size: 2em;
+                    }
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+

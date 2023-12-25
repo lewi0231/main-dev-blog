@@ -2,6 +2,7 @@ import React from 'react'
 import IconExternal from './IconExternal'
 import IconFolder from './IconFolder'
 import IconGithub from './IconGitHub'
+import IconHamburger from './IconHamburger'
 import IconInstagram from './IconInstagram'
 import IconLinkedIn from './IconLinkedIn'
 import IconShopify from './IconShopify'
@@ -24,6 +25,8 @@ const Icon = ({ name }) => {
             return <IconSpotify />
         case 'shopify':
             return <IconShopify />
+        case 'hamburger':
+            return <IconHamburger />
         default:
             return <IconExternal />
     }
