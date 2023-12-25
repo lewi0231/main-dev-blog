@@ -1,20 +1,21 @@
 ---
 title: Shopify Scrolling Marquee
 slug: shopify-marquee
-tags: ['Shopify', 'Dawn', 'Marquee']
+tags: ["Shopify", "Dawn", "Marquee"]
 summary: I add a scrolling marquee feature to the Dawn Shopify theme.
 date: 2021-01-04T00:00:00+00:00
 ---
 
-import Button from '../components/button.jsx'
-
 ### TLDR
-Feel free to jump straight to the code below.  Note this has not been tested in themes other than the Dawn theme.
+
+Feel free to jump straight to the code below. Note this has not been tested in themes other than the Dawn theme.
 
 ### Introduction
+
 I recently came across a fascinating YouTube [video](https://www.youtube.com/watch?v=ygPq5nMErdg) showcasing a trending design feature – the Marquee scroller, prominently featured on sites like [MrBeast](https://mrbeast.store/). Inspired, I decided to implement a similar feature for the Shopify Dawn theme.
 
 ### Why a Marquee.
+
 Marquees add a touch of nostalgic charm and can be quite engaging. Here’s why you might consider one:
 
 - **Attention-Grabbing**: Perfect for highlighting important information.
@@ -23,13 +24,15 @@ Marquees add a touch of nostalgic charm and can be quite engaging. Here’s why 
 ### Step-by-Step Guide
 
 1. #### Accessing the Code Editor:
-* Go to your Shopify store's admin page.
-* Navigate to Online Store -> Themes.
-* Click on the three dots next to 'Customize', and select 'Edit code'.
+
+- Go to your Shopify store's admin page.
+- Navigate to Online Store -> Themes.
+- Click on the three dots next to 'Customize', and select 'Edit code'.
 
 2. #### Creating the Marquee:
-* In the 'Sections' folder, create a new file named marquee.liquid.
-* Copy and paste the following code:
+
+- In the 'Sections' folder, create a new file named marquee.liquid.
+- Copy and paste the following code:
 
 ```jsx file=marquee.liquid
 {% assign font_size_class = "text-medium" %}
@@ -52,7 +55,7 @@ Marquees add a touch of nostalgic charm and can be quite engaging. Here’s why 
 
 
 {%- style -%}
-   
+
 
     .marquee-wrapper {
         border-top: {{section.settings.border_color}} solid {{section.settings.border_thickness}}px;
@@ -62,7 +65,7 @@ Marquees add a touch of nostalgic charm and can be quite engaging. Here’s why 
         padding-bottom: {{section.settings.padding}}px;
         white-space: nowrap;
     }
-    
+
     .marquee-content {
         display: inline-block;
         animation: marquee-animation {{section.settings.speed}}s linear infinite;
@@ -180,7 +183,7 @@ Marquees add a touch of nostalgic charm and can be quite engaging. Here’s why 
                 "value": "large",
                 "label": "Large"
             }
-        ], 
+        ],
         "default": "medium"
     },
     {
@@ -201,6 +204,5 @@ Marquees add a touch of nostalgic charm and can be quite engaging. Here’s why 
 ```
 
 ### Tailoring the Marquee
+
 This basic marquee setup offers customization options like direction, speed, and padding. For advanced customizations (such as incorporating SVGs or unique fonts), feel free to reach out for personalized coding assistance.
-
-
