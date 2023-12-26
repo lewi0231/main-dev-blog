@@ -1,6 +1,6 @@
 
 const config = {
-    email: 'paullewis1308@gmail.com',
+    email: 'studio.dev888@gmail.com',
     socialMedia: [
         {
             name: 'GitHub',
@@ -10,28 +10,23 @@ const config = {
         {
             name: 'X',
             icon: 'x', // This should match the key in your Icon component
-            url: 'https://twitter.com/example',
+            url: 'https://twitter.com/studio_dev888',
         },
         {
             name: 'LinkedIn',
             icon: 'linkedin', // This should match the key in your Icon component
-            url: 'https://linkedin.com/in/paullewis',
+            url: 'https://www.linkedin.com/in/paul-lewis-80016082/',
         },
         {
             name: 'Instagram',
             icon: 'instagram', // This should match the key in your Icon component
-            url: 'https://linkedin.com/in/paullewis',
+            url: 'https://www.instagram.com/studio.dev888/',
         },
-        {
-            name: 'Shopify',
-            icon: 'shopify',
-            url: 'https://community.shopify.com/c/user/viewprofilepage/user-id/1636038'
-        },
-        {
-            name: "Spotify",
-            icon: 'spotify',
-            url: 'https://open.spotify.com/artist/5Sjxm1sfYr74l1iwTGcbJt?si=lzQYU2toQ3uIrHVKEPnOQQ'
-        }
+        // {
+        //     name: 'Shopify',
+        //     icon: 'shopify',
+        //     url: 'https://community.shopify.com/c/user/viewprofilepage/user-id/1636038'
+        // }
     ]
 }
 

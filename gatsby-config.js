@@ -11,8 +11,16 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/logo.png`
+      }
+    },
     {
       resolve: 'gatsby-plugin-mdx',
       options:
@@ -35,8 +43,8 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: 'Studio Code',
-    description: 'The portfolio blog for Paul Lewis',
-    contact: 'paullewis1308@gmail.com'
+    title: 'Studio Dev',
+    description: 'A portfolio website',
+    contact: 'studio.dev888@gmail.com'
   },
 }

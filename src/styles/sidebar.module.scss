@@ -5,10 +5,7 @@
     flex-direction: column;
     position: fixed;
 
-    &::before {
-        flex-grow: 3;
-        content: '';
-    }
+
 
 
     .wrapper {
@@ -22,13 +19,17 @@
 
 .sidebarRight {
     right: 0;
+    &::before {
+        flex-grow: 20;
+        content: '';
+    }
 
     a {
         color: var(--secondary);
         font-family: var(--mono-font);
         font-size: 1em;
         font-weight: 100;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.1em;
         text-decoration: none;
         text-orientation: sideways;
         transition: transform 0.3s ease;
@@ -40,12 +41,26 @@
             cursor: pointer;
         }
 
+
+    }
+
+    &:after {
+        flex-grow: 10;
+        content: "";
+        background-color: var(--secondary-light);
+        width: 1px;
+        margin: 0 auto;
     }
 
 }
 
 .sidebarLeft {
     left: 0;
+
+    &::before {
+        flex-grow: 23;
+        content: '';
+    }
 
     .wrapper {
         .iconLinkWrapper {
@@ -65,6 +80,13 @@
                 }
             }
         }
+    }
+    &:after {
+        flex-grow: 10;
+        content: "";
+        background-color: var(--secondary-light);
+        width: 1px;
+        margin: 0 auto;
     }
 }
 
