@@ -4,8 +4,8 @@ import SEO from '../components/Seo'
 import SidebarLeft from "../components/SidebarLeft"
 import SidebarRight from "../components/SidebarRight"
 import About from "../components/sections/About"
+import Articles from '../components/sections/Articles'
 import Hero from "../components/sections/Hero"
-import Tutorials from "../components/sections/Tutorials"
 import * as styles from '../styles/home.module.css'
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       <div className={styles.contentWrapper}>
         <Hero />
         <About />
-        <Tutorials />
+        <Articles />
       </div>
       <SidebarRight />
     </Layout>

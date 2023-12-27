@@ -1,10 +1,10 @@
 import React from 'react';
-import * as styles from '../styles/tutorial.module.scss';
+import * as styles from '../styles/article.module.scss';
 import Icon from './icons/Icon';
 
-const Tutorial = ({ tutorial }) => {
-    const { title, tags, summary } = tutorial;
-    console.log(tutorial);
+const Article = ({ article }) => {
+    const { title, tags, summary } = article;
+
     return (
         <div className={styles.container}>
             <div className={styles.iconsHeader}>
@@ -24,4 +24,4 @@ const Tutorial = ({ tutorial }) => {
     )
 }
 
-export default Tutorial
+export default Article

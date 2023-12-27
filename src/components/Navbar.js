@@ -46,7 +46,7 @@ export default function Navbar() {
       <div className={styles.links} id='links'>
         <Link id='link' to="/">home</Link>
         <Link id='link' to="/#about">about</Link>
-        <Link id='link' to="/#tutorials">tutorials</Link>
+        <Link id='link' to="/#articles">articles</Link>
       </div>
       <button 
         title='mobile nav' 

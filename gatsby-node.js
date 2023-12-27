@@ -4,7 +4,7 @@ const templatePath = path.resolve('./src/templates/tutorial-details.js')
 
 exports.createPages = async ({ graphql, actions }) => {
     const { data } = await graphql(`
-        query Tutorials {
+        query Articles {
             allMdx{
                 nodes{
                     frontmatter{
@@ -20,7 +20,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     data.allMdx.nodes.forEach(node => {
         actions.createPage({
-            path: '/tutorials/' + node.frontmatter.slug,
+            path: '/articles/' + node.frontmatter.slug,
             component: `${templatePath}?__contentFilePath=${node.internal.contentFilePath}`,
             context: {
                 slug: node.frontmatter.slug

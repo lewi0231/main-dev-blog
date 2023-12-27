@@ -17,16 +17,14 @@ const About = () => {
         <section id='about' className={styles.container}>
             <h2>A bit <span>about</span> me.</h2>
             <p>
-                Hello! After a rewarding and yet ultimately unfullfilling career in the human services domain.  I embarked on a journey into the realm of computing and the web.  There I discovered a passion for web development and now aim to help people achieve their branding and personal goals through web development and design.
-
-                my passion, This journey was driven by my passion for technology and creation. I cherish the collaborative experiences and skills gained from developing RESTful APIs, conducting performance testing, and working on front-end development.
+                After a rewarding and yet ultimately unfulfilling career in human services, I decided to follow my dream of becoming a software engineer.  This led me to completing a degree in computer science which in turn led me to a role with Fivecast (an Adelaide-based company specialising in open-sourced intelligence). There, I worked with technologies such as Typescript, React, Docker, Java, Spring, PostgreSQL.
             </p>
             <p>
-                I've embraced freelancing to align with my love for flexibility and creativity. It's a path that allows me to engage deeply with each project and continuously explore new challenges.
+                With a keen spirit for adventure, continuous-learning and creativity I left to explore the realm of freelancing.  Since then I have delved deeper into e-commerce solutions such as Shopify and Medusa.  Click <a href="#articles">here</a> to view some of my shopify-related articles.
             </p>
-
             <p>
-                Outside of coding, I'm inspired by nature and music (you can hear some of my music <a href={spotifyUrl} >here</a> - under the pseudonym Decoding Seabirds), which influence my approach to technology – thoughtful, user-centric, and innovative.
+                Outside of coding, I'm inspired by nature and music (you can hear some of my music <a href="https://open.spotify.com/artist/5Sjxm1sfYr74l1iwTGcbJt?si=81K0QaxTSwygKywfZZK5Mg">here</a> - under the pseudonym Decoding Seabirds), which I believe influences my approach to technology.
+                
             </p>
         </section>
     )

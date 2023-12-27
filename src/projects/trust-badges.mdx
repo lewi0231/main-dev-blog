@@ -1,0 +1,95 @@
+---
+title: Add Trust Badges to Your Product
+slug: add-trust-badges
+tags: ["Shopify", "Dawn", "Marquee"]
+summary: I teach you how you can add trust badges to your product page.
+date: 2023-12-27T00:46:58.125Z
+---
+
+### TLDR
+
+Head to the default product page in your theme editor and paste the below code in a custom liquid block.
+
+### Introduction
+
+Adding trust badges to your Shopify store can significantly boost customer confidence, reduce cart abandonment, and potentially increase conversions. Trust badges are visual cues that establish credibility and security, reassuring customers about the safety of their transactions. Below is a step-by-step guide to adding trust badges to your Shopify site.
+
+### Step-by-Step guide
+
+1. #### Choose Your Trust Badges
+
+- Decide which trust badges are relevant to your store (e.g., SSL certificate, payment security, money-back guarantee).
+- Popular badges include PayPal Verified, McAfee Secure, SSL Encrypted, etc.
+
+2. #### Obtain Trust Badges
+
+- There are a number of sites that offer trust badge icons (e.g., iconFinder), just google the icon that you're looking for.
+- Once you your icons' downloaded to your computer you'll need to upload them to shopify.
+- This can be performed by heading to your store's admin selecting `content -> files`.
+- Once it's uploaded click the link button for a copy of your icon link.
+
+3. #### Access Your Shopify Store Theme editor
+
+- Log in to your Shopify admin panel.
+- Go to `Online Store > Themes`.
+- Find the theme you want to edit and click `Customize`.
+- Navigate to your product page.
+
+4. #### Add a Custom Liquid block
+
+- Under template include the custom liquid block.
+- Paste the below code.
+- Position the block as desired.
+
+### Code
+
+I have some example code inserted (e.g., Worldwide Shipping represented by a plane), however feel free to alter this to your liking.
+
+NOTE: That you'll need to
+
+```
+<div class="cc_badges">
+  <div class="cc_badge">
+title="plane icon">
+        <img src="PATH_TO_ICON" alt="plane icon">
+    <p>Worldwide Shipping</p>
+  </div>
+  <div class="cc_badge">
+    <a href="" title="credit card icon">
+        <img src="PATH_TO_ICON" alt="credit card icon">
+		</a>
+    <p>Secure Payments</p>
+  </div>
+  <div class="cc_badge">
+        <img src="PATH_TO_ICON" alt="return icon"/>
+    <p>Easy Returns</p>
+  </div>
+</div>
+<style>
+    .cc_badges {
+    display: flex;
+    justify-content: center;
+    }
+
+    .cc_badge {
+    margin: 0;
+    text-align: center;
+    width: 33%;
+    }
+
+    .cc_badge img {
+    width: 50px;
+    background: #eee;
+    padding: 10px;
+    border-radius: 100%;
+    }
+
+    .cc_badge p {
+        font-family: var(--font-heading-family);
+    }
+<style/>
+```
+
+### Conclusion
+
+This will allow you to easily add some trust badges to your site. If you need further help or customization please reach out.
