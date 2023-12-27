@@ -2,6 +2,7 @@ import { graphql } from 'gatsby'
 import React from 'react'
 import Button from '../components/Button'
 import Layout from '../components/Layout'
+import { useSiteMetadata } from '../hooks/use-site-metadata'
 import * as styles from '../styles/tutorial-details.module.scss'
 
 
@@ -9,7 +10,8 @@ const TutorialDetails = ({ data, children }) => {
     const { title } = data.mdx.frontmatter
 
     const tableOfContents = data.mdx.tableOfContents.items
-    console.log(tableOfContents);
+
+    const {contact} = useSiteMetadata()
 
     return (
         <Layout>
@@ -30,7 +32,9 @@ const TutorialDetails = ({ data, children }) => {
                                 </li>
                             ))}
                         </ul>
-                        <Button buttonText="Need help?" btnSize='small' leftAlign="true" />
+                        <a href={`mailto:${contact}`}>
+                            <Button buttonText="Need help?" btnSize='small' leftAlign="true" />   
+                        </a>
                     </div>
                 </div>
             </div>

@@ -66,6 +66,10 @@
 
         }
 
+        a {
+            color: var(--secondary);
+        }
+
         .sidebar {
             width: 25%;
             margin-top: 1em;
@@ -96,6 +100,7 @@
                     }
                 }
             }
+
 
             h3 {
                 font-size: 1.1em;
