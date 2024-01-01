@@ -1,0 +1,63 @@
+---
+title: Add An Agree to Terms Checkbox to Product Page
+slug: agree-terms
+tags: ["Shopify", "Dawn", "Terms-and-Conditions", "Checkbox"]
+summary: I add an 'agree to terms' checkbox to the Shopify Cart page that must be clicked in order to proceed to Checkout.
+date: 2021-01-04T00:00:00+00:00
+---
+
+### TLDR;
+
+Create a policy and take a note of the url (e.g., https://{yoursite}/policies/terms-of-service) and Simply copy and paste the below code into the `main-cart-footer.liquid` file, just above the closing `</small>` tag.
+
+### Introduction
+
+Some products require the customer to agree to terms prior to proceeding to checkout, so this will allow you to do that.
+
+### Steps
+
+#### First Step
+
+You'll want to create first navaigate to settings -> policies -> and then create the policy that you want. Make sure that you take note of the url - or more specifically the part of the url that comes after your shop (e.g., /policies/terms-of-service)
+
+#### Step 2
+
+Next, you'll want to be able to navigate to your code editor and search for the file, `main-cart-footer.liquid`. Once, you've got that open then search for `</small>` and paste the below code above it.
+
+#### Step 4
+
+Now, all you need to do is tweak the code to suit your specific need. That is, change the `/policies/terms-of-service` part so that it reflects the path to your policy. And, alter the text as desired. Currently, I have 'Please proceed if you....'.
+
+### The Code
+
+```
+         <div id="lewis-terms-wrapper">
+                    <label for="lewis-checkbox"/>
+                      <input type="checkbox" id="lewis-checkbox" name="checkbox" value="true"/>
+                      Please proceed if you agree to the <a href={{shop.url | append: "/policies/terms-of-service"}}>terms and conditions</a>
+                    </label>
+                  </div>
+
+                  <style>
+                    #lewis-terms-wrapper {
+                      display: block;
+                      margin-top: 2em;
+                      margin-bottom: 1em;
+                    }
+                  </style>
+
+<script>
+                  document.addEventListener('DOMContentLoaded', () => {
+                    const checkbox = document.getElementById('lewis-checkbox');
+                    const button = document.getElementById('checkout')
+                    checkbox.addEventListener('change', () => {
+                      button.disabled = !checkbox.checked
+                    })
+
+                  })
+                  </script>
+```
+
+### Summary
+
+I hope this helps. If you have any further questions or would like this solution to be tailored to your specific theme or use case, please get in touch.
