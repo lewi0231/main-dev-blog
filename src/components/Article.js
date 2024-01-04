@@ -6,7 +6,7 @@ const Article = ({ article }) => {
     const { title, tags, summary } = article;
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} >
             <div className={styles.iconsHeader}>
                 <div className={styles.leftIcon}>
                     <Icon name="folder" />

@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import SEO from '../components/Seo'
+import Seo from '../components/Seo'
 import SidebarLeft from "../components/SidebarLeft"
 import SidebarRight from "../components/SidebarRight"
 import About from "../components/sections/About"
@@ -23,5 +23,5 @@ export default function Home() {
 }
 
 export const Head = () => (
-  <SEO />
+  <Seo />
 )

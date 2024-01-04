@@ -1,0 +1,53 @@
+---
+title: Dawn Collection List Text Overlay
+slug: collection-link-overlay
+tags: ["Shopify", "Dawn", "Collection", "Overlay"]
+summary: I alter the default Shopify Dawn Collection List so that it overlays the collection image.
+date: 2023-01-04T00:00:00+00:00
+---
+
+### TL;DR
+
+### Introduction
+
+You might have looked upon this effect (see below image) in other Shopify websites, with longing.  This is a relatively easy change, using Shopify's Custom CSS block.
+
+### Step-By-Step
+
+1. Place your Collection List Section where you would like it.
+
+2. Click on the Collection List Section to access the settings in the Theme editor.
+
+3. Paste the below code in the Custom CSS block, down the bottom.
+
+```
+.card__content {
+  position: absolute;
+  opacity: 0;
+  top: 45%;
+  transition: all 1s ease;
+}
+.card-wrapper .card__media {
+  transition: all 0.3s ease;
+}
+.card-wrapper:hover .card__media {
+  opacity: 0.3;
+}
+.card-wrapper:hover .card__content {
+  opacity: 0.8;
+}
+.card__content h3 {
+  font-size: 3rem;
+}
+.card__content svg {
+  width: 1em;
+}
+```
+
+### Explanation
+
+The above code takes the `card__content`, which is the `h3` link content and positions it 45% from the top of its parent container.  Hover effects and sizing have been altered for aesthetics.
+
+### Assistance
+
+If you have any questions or would like some help with a project, please reach out.

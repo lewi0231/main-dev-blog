@@ -6,6 +6,7 @@ import Article from '../Article'
 
 const Articles = () => {
     const articles = useMarkdownRemark()
+    console.log(articles)
 
     return (
         <div id="articles" className={styles.container}>
@@ -19,7 +20,6 @@ const Articles = () => {
                         >
                             <Article
                                 article={article.frontmatter}
-                                key={article.slug}
                             />
                         </Link>)
                 })}
