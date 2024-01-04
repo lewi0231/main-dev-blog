@@ -14,15 +14,15 @@ Perhaps you aren't looking to have all of your product information available to 
 
 ### Step-By-Step
 
-1. **Navigate to your Shopify store admin page**
-There you'll want to navigate to custom data via settings, and select products and then 'add definition' (`settings -> custom data -> products -> add definition).
+1. #### Navigate to your Shopify store admin page**
+There you'll want to navigate to custom data via settings, and select products and then 'add definition' (`settings -> custom data -> products -> add definition`).
 
-2. **Create relevant definitions**
+2. #### Create relevant definitions**
 If you're wanting to create a 'Shipping' dropdown text-box then you'll want to create a definition called shipping, but you can obviously create or call it whatever you wish.  The important part of this is remembering the metafield definition path and rename it.  If you entered Shipping, then  by default it will look like this `custom.shipping`.  I would be inclined to rename the custom part to something meaningful, for instance product_info.  So you'll have `product_info.shippin` if you've done as I've done.
 
 Add as many fields as you like, just remember the path for each - you can always return if you forget.
 
-3. **Head to the code editor**
+3. #### Head to the code editor**
 Once you're in your code editor (which you can access via your theme editor or your store admin page) you'll see file or directory names on the left-hand-side.  We're going to create a new file called `product-info-dropdown.liquid`, and then paste in the following code.
 
 ```html
@@ -123,8 +123,7 @@ In sum, make sure that you paste each of those code segments one below the other
 
 Although you can place these product-info dropdown text boxes wherever you like, I'm going to place them below the description area of the product page.  In order to do that, on the main-product page search for (control + f) 'description'.  In my editor this occurs, on the 174th line, but this may be different for you.  You'll probably notice the line `{%- if product.description != blank -%}` and below that there will be an `endif`.  Clear some space after the endif and we'll insert some more code:
 
-```
-liquid
+```liquid
 
 {% render 'product-info-dropdown', content: product.metafields.product_info.shipping, button_name: "Shipping" %}
 {% render 'product-info-dropdown', content: product.metafields.product_info.payment_methods, button_name: "Payment
