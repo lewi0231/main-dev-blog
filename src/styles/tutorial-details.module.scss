@@ -1,67 +1,84 @@
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     width: 80vw;
     height: 100%;
     margin: 0 auto;
 
-    h2 {
-        color: var(--secondary);
-        font-size: 3em;
+    h3 {
         letter-spacing: -2px;
         line-height: 1em;
+        color: var(--secondary-lighter);
+        font-weight: 500;
+        filter: brightness(90%);
     }
 
     .mainContent {
         display: flex;
-        padding-top: 2em;
-        color: var(--secondary);
-
+        padding-top: 3em;
 
         .details {
-            padding-right: 3em;
+            padding-right: 1em;
             width: 75%;
 
             a {
-                text-decoration: underline;
-                color: var(--secondary);
-                &:hover {
-                    color: var(--tertiary);
-                }    
-            }
-
-
-            h3 {
-                margin-top: 0.5em;
-                padding-bottom: 0.3em;
+                text-decoration: none;
                 color: var(--secondary-light);
-                letter-spacing: -1px;
-                font-size: 1.8em;
+
+                &:hover {
+                    color: var(--secondary-lightest);
+                    text-decoration: underline;
+                }
             }
+
+
+            // h5 {
+            //     margin-top: 0.5em;
+            //     padding-bottom: 0.3em;
+            //     color: var(--secondary-lighter);
+            //     letter-spacing: -1px;
+            //     // font-size: 1.8em;
+            // }
 
             p {
                 padding-bottom: 0.5em;
                 font-size: 1.1em;
-                font-weight: 300;
-
-                &:last-of-type {
-                    height: 200px;
-                }
-
+                font-weight: 400;
+                letter-spacing: 0.03em;
+                color: var(--neutral-03);
+                filter: brightness(80%);
             }
 
             ol,
             ul {
-                color: var(--secondary-light);
-                padding-bottom: 0.8em;
+                color: var(--neutral-03);
+                // padding-bottom: 0.8em;
                 padding-left: 1em;
-                font-size: 1.1em;
                 font-weight: 300;
+                opacity: 0.8;
+
+                li {
+                    margin-top: 0.5em;
+                    padding-bottom: 0.3em;
+                    font-size: 1em;
+                }
             }
 
 
             h4 {
                 margin-top: 0.8em;
-                color: var(--secondary-light);
+                color: var(--primary-lightest-lightest);
+                filter: brightness(80%);
+                font-weight: 400;
+                font-size: 1.5em;
+                margin-bottom: 0.5em;
+            }
+
+            h5 {
+                color: var(--primary-lightest-lightest);
+                font-weight: 400;
+                font-size: 1.1em;
+                margin-bottom: 0.3em;
+                opacity: 0.7;
             }
 
         }
@@ -79,37 +96,44 @@
 
 
             .tableOfContents {
-                line-height: 2em;
 
                 li {
                     list-style: none;
 
                     a {
-                        color: var(--tertiary);
-                        text-decoration-color: var(--tertiary);
-                        line-height: 2.2em;
-                        font-size: 1.1em;
+                        color: var(--secondary-lightest);
+                        text-decoration-color: var(--secondary-light);
+                        line-height: 2.5em;
+                        font-size: 0.95em;
                         text-decoration: none;
-                        opacity: 0.8;
-                        font-weight: 300;
+                        // opacity: 0.8;
+                        font-weight: 400;
+                        letter-spacing: 0.06em;
+                        transition: all 0.3s ease;
 
                         &:hover {
                             text-decoration: underline;
-                            color: var(--secondary);
+                            color: var(--secondary-light);
                         }
+                    }
+
+                    &:last-of-type {
+                        margin-bottom: 1em;
                     }
                 }
             }
 
-
-            h3 {
-                font-size: 1.1em;
+            h5 {
+                font-size: 1em;
                 letter-spacing: 0;
-                opacity: 0.8;
+                opacity: 1;
                 padding-bottom: 1em;
-
+                color: var(--secondary-light);
+                font-weight: 400;
 
             }
+
+
 
         }
 
@@ -118,27 +142,34 @@
 
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     .container {
         padding-top: 2em;
-        h2 {
+
+        h3 {
             font-size: 2.5em;
         }
 
         .mainContent {
-            .details{
-                h3{
+            .details {
+                h4 {
                     font-size: 1.5em;
                 }
+
                 p {
                     font-size: 0.9em;
                 }
-                ul, ol {
+
+                ul,
+                ol {
                     font-size: 0.95em;
                 }
+
+
             }
+
             .sidebar {
-                h3{
+                h5 {
                     font-size: 0.8em;
                 }
 
@@ -146,79 +177,104 @@
                     font-size: 0.8em;
                 }
             }
-            
+
         }
     }
 
-    @media (max-width: 800px){
+    @media (max-width: 800px) {
         .container {
 
-            h2 {
-                font-size: 2.2em;
+            h3 {
+                font-size: 2.4em;
             }
-    
+
             .mainContent {
-                .details{
-                    h3{
+                .details {
+                    padding-right: 1em;
+                    width: 100%;
+
+                    h4 {
                         font-size: 1.5em;
                     }
+
                     p {
                         font-size: 0.8em;
                     }
-                    ul, ol {
+
+                    ul,
+                    ol {
                         font-size: 0.8em;
                     }
+
+
                 }
+
                 .sidebar {
-                    h3{
+                    display: none;
+                    width: 0vw;
+
+                    h5 {
                         font-size: 0.7em;
                     }
-    
+
                     .tableOfContents {
                         font-size: 0.7em;
                     }
                 }
-                
+
             }
         }
-        @media (max-width: 600px){
+
+        @media (max-width: 600px) {
             .container {
-    
-                h2 {
+
+                h3 {
                     font-size: 2em;
                 }
-        
+
                 .mainContent {
-                    .details{
-                        h3{
+                    .details {
+                        padding-right: 1em;
+                        width: 100%;
+
+                        h4 {
                             font-size: 1.3em;
                         }
+
                         p {
                             font-size: 0.7em;
                         }
-                        ul, ol {
+
+                        ul,
+                        ol {
                             font-size: 0.7em;
                         }
+
                     }
+
                     .sidebar {
-                        h3{
+                        display: none;
+                        width: 0vw;
+
+                        h5 {
                             font-size: 0.6em;
                         }
-        
+
                         .tableOfContents {
                             font-size: 0.6em;
                         }
                     }
-                    
+
                 }
             }
-            @media (max-width: 500px){
+
+            @media (max-width: 500px) {
                 .container {
-        
-                    h2 {
+
+                    h3 {
                         font-size: 2em;
                     }
-            
+
                     .mainContent {
                         .details {
                             padding-right: 1em;
@@ -229,9 +285,10 @@
                             display: none;
                             width: 0vw;
                         }
-                        
+
                     }
                 }
+
                 @media (max-width: 300px) {
                     .container {
                         h2 {

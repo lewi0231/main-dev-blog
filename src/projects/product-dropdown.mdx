@@ -1,28 +1,40 @@
 ---
-title: Addition Info Product Dropdown Using Metafields
+title: Product Dropdown Text
 slug: product-dropdown
-tags: ["Shopify", "Dawn", "Product", "Dropdown"]
+tags: ["Shopify", "Product", "Dropdown", "Metafields"]
 summary: You create text rich drop down sections in the product card through the use of metafields.
-date: 20213-02-04T00:00:00+00:00
+iconName: github
+iconLink: https://github.com/lewi0231/shopify_code/blob/main/text-dropdown
+date: 20213-03-04T00:00:00+00:00
 ---
 
-### TL;DR
 
-### Introduction
+#### TL;DR
+
+You can paste the [below code](#step-by-step) into a new section, which I've named `product-info-dropdown.liquid`.  You'll then need to `render` this within your `main-product.liquid` page.
+
+<video autoPlay="true" muted loop width="100%">
+  <source src="/videos/text-dropdown-capture.mp4" type="video/mp4" />
+  Your browser does not support this feature.
+</video>
+
+#### Introduction
 
 Perhaps you aren't looking to have all of your product information available to the customer, but rather want to present information in bite-size chunks.  You can do that by adding a show / hide button (giving the appearance of a text reveal upon button click).  Examples of sections that can be useful encapsulate within this functionality are fields like 'Shipping', 'Returns' or 'Materials'.
 
-### Step-By-Step
 
-1. #### Navigate to your Shopify store admin page**
+
+#### Step-By-Step
+
+##### 1. Navigate to your Shopify store admin page
 There you'll want to navigate to custom data via settings, and select products and then 'add definition' (`settings -> custom data -> products -> add definition`).
 
-2. #### Create relevant definitions**
+##### 2. Create relevant definitions
 If you're wanting to create a 'Shipping' dropdown text-box then you'll want to create a definition called shipping, but you can obviously create or call it whatever you wish.  The important part of this is remembering the metafield definition path and rename it.  If you entered Shipping, then  by default it will look like this `custom.shipping`.  I would be inclined to rename the custom part to something meaningful, for instance product_info.  So you'll have `product_info.shippin` if you've done as I've done.
 
 Add as many fields as you like, just remember the path for each - you can always return if you forget.
 
-3. #### Head to the code editor**
+##### 3. Head to the code editor
 Once you're in your code editor (which you can access via your theme editor or your store admin page) you'll see file or directory names on the left-hand-side.  We're going to create a new file called `product-info-dropdown.liquid`, and then paste in the following code.
 
 ```html
@@ -119,7 +131,7 @@ This last part of the puzzle makes the dropdown work, by adding an event listene
 
 In sum, make sure that you paste each of those code segments one below the other (the order doesn't matter, but by convention liquid / html is normally up top).
 
-4. **Now head to the `main-product.liquid` page**
+##### 4. Now head to the `main-product.liquid` page
 
 Although you can place these product-info dropdown text boxes wherever you like, I'm going to place them below the description area of the product page.  In order to do that, on the main-product page search for (control + f) 'description'.  In my editor this occurs, on the 174th line, but this may be different for you.  You'll probably notice the line `{%- if product.description != blank -%}` and below that there will be an `endif`.  Clear some space after the endif and we'll insert some more code:
 
@@ -135,13 +147,13 @@ Obviously, the above example is rendering two instances of our 'product-info-dro
 
 Don't for get to save and test your work.
 
-5. **Test it out**
+##### 5. Test it out
 
 Back in your store admin page if you navigate to a product you'll notice your metafields down the bottom.  Paste some dummy information in there from another website (as this will be Rich text) and then head back over to your theme preview and navigate to that particular product.  
 
 You should now be able to hide / reveal the text content.
 
-### Summary
+#### Summary
 
 So, today we have created product metafields and enabled text dropdowns for a product page that reveals the containing information.
 

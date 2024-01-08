@@ -1,5 +1,16 @@
 a {
 
+
+    .img {
+        width: 10em;
+        opacity: 1;
+        transition: all 0.3s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
     .container {
         align-items: center;
         background-color: var(--secondary);
@@ -12,24 +23,24 @@ a {
         transition: background-color 1s ease;
         transition: opacity 1s ease;
         width: 5em;
-    
+
         &:hover {
             cursor: pointer;
-            opacity: 0.5;
-        
+            opacity: 0.1;
         }
+
         .box {
             border-left: var(--primary) solid 0.3em;
             border-bottom: var(--primary) solid 0.3em;
             height: 50%;
             width: 50%;
         }
-    
-        
-    }    
+
+
+    }
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
     a {
         .container {
             width: 4em;
@@ -38,4 +49,3 @@ a {
 
     }
 }
-

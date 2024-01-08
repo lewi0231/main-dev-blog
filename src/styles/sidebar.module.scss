@@ -1,12 +1,9 @@
 .sidebarContainer {
     display: flex;
-    height: calc(100vh - 144px);
+    height: calc(100vh - 182.781px);
     width: 10vw;
     flex-direction: column;
     position: fixed;
-
-
-
 
     .wrapper {
         align-items: center;
@@ -19,17 +16,17 @@
 
 .sidebarRight {
     right: 0;
+
     &::before {
-        flex-grow: 20;
+        flex-grow: 25;
         content: '';
     }
 
     a {
-        color: var(--secondary);
+        color: var(--secondary-light);
         font-family: var(--mono-font);
         font-size: 1em;
-        font-weight: 100;
-        letter-spacing: 0.1em;
+        letter-spacing: -0.1em;
         text-decoration: none;
         text-orientation: sideways;
         transition: transform 0.3s ease;
@@ -37,7 +34,7 @@
 
         &:hover {
             transform: translateY(-5px);
-            color: var(--tertiary);
+            color: var(--secondary-lightest);
             cursor: pointer;
         }
 
@@ -45,7 +42,7 @@
     }
 
     &:after {
-        flex-grow: 10;
+        flex-grow: 4;
         content: "";
         background-color: var(--secondary-light);
         width: 1px;
@@ -58,7 +55,7 @@
     left: 0;
 
     &::before {
-        flex-grow: 23;
+        flex-grow: 25;
         content: '';
     }
 
@@ -75,14 +72,15 @@
 
                 &:hover {
                     transform: translateY(-5px);
-                    stroke: var(--tertiary);
+                    stroke: var(--secondary-lightest);
                     stroke-width: 2px;
                 }
             }
         }
     }
+
     &:after {
-        flex-grow: 10;
+        flex-grow: 25;
         content: "";
         background-color: var(--secondary-light);
         width: 1px;

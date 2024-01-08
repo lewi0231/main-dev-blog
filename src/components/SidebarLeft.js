@@ -7,9 +7,7 @@ export default function SidebarLeft() {
     const icons = config.socialMedia.map(media => {
         return (
             <div className={styles.iconLinkWrapper} key={media.icon}>
-                <a href={media.url} id="" aria-label={media.name}
-                    target="_blank" rel='noreferrer'>                    <Icon name={media.icon} /></a>
-
+                <Icon name={media.icon} link={media.url} />
             </div>
         )
     })

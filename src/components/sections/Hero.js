@@ -4,19 +4,18 @@ import * as styles from '../../styles/hero.module.scss'
 import Button from '../Button'
 
 const Hero = () => {
-    const {contact} = useSiteMetadata()
+    const { contact } = useSiteMetadata()
 
     return (
         <section className={styles.container}>
 
-            <p>Hello, I'm</p>
-            <h1 className={styles.heroTitle}>Lewis</h1>
-            <h1 className={styles.subtitle}>I build websites</h1>
-            <p className={styles.mainText}>A software developer with a passion for web development.  Currently utilising React, Shopify, and WordPress to turn your vision into a vibrant digital reality.
+            <p>Hi, my name is</p>
+            <h1 className={styles.heroTitle}>Paul.</h1>
+            <h1 className={styles.subtitle}>I'm a Shopify developer</h1>
+            <p className={styles.mainText}>...with a passion for web development and making things look good.  Check out some examples of my work here.
             </p>
             <a href={`mailto:${contact}`}>
                 <Button
-                    className={styles.btn}
                     buttonText='Get in touch'
                     btnSize='large' />
             </a>

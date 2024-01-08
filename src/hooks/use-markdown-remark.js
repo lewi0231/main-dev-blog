@@ -12,6 +12,8 @@ export const useMarkdownRemark = () => {
                         tags
                         date
                         summary
+                        iconName
+                        iconLink
                     }
                     id
                     internal {

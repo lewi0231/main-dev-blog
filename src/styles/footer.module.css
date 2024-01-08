@@ -7,13 +7,13 @@
 }
 
 .footer p {
-    color: var(--secondary);
+    color: var(--neutral-03);
     font-weight: 400;
 }
 
 .footer a {
     text-decoration: none;
-    color: var(--tertiary);
+    color: var(--primary-lightest-lighter);
 }
 
 .footer a:hover {

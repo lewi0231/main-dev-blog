@@ -35,14 +35,24 @@ pre {
     background-color: white;
 }
 
+.btnWrapper {
+    position: relative;
+
+}
+
+.copied {
+    margin-top: 1em;
+    position: absolute;
+}
+
 @media (max-width: 800px) {
     pre {
         font-size: 0.8em;
     }
+
     @media (max-width: 600px) {
         pre {
             font-size: 0.7em;
         }
     }
 }
-

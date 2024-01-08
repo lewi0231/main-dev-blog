@@ -20,7 +20,6 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleCloseMenu = () => {
-      console.log("clicked")
       hamburger.classList.remove(styles.active)
       links.classList.remove(styles.active)
     }
@@ -36,23 +35,24 @@ export default function Navbar() {
     const allLinks = document.querySelectorAll('#link');
 
     allLinks.forEach(l => l.addEventListener('click', handleCloseMenu));
-  
-  
+
+
   }, [])
 
   return (
     <nav id='navContainer' className={`${styles.navContainer} `}>
-      <Logo/>
+      <Logo />
       <div className={styles.links} id='links'>
         <Link id='link' to="/">home</Link>
         <Link id='link' to="/#about">about</Link>
-        <Link id='link' to="/#articles">articles</Link>
+        <Link id='link' to="/#articles">tutorials</Link>
+        <Link id='link' to="/#work">work</Link>
       </div>
-      <button 
-        title='mobile nav' 
-        id='hamburger' 
+      <button
+        title='mobile nav'
+        id='hamburger'
         className={styles.hamburger}
-        >
+      >
         <div className={styles.bar}></div>
         <div className={styles.bar}></div>
         <div className={styles.bar}></div>

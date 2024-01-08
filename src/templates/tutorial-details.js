@@ -11,12 +11,12 @@ const TutorialDetails = ({ data, children }) => {
 
     const tableOfContents = data.mdx.tableOfContents.items
 
-    const {contact} = useSiteMetadata()
+    const { contact } = useSiteMetadata()
 
     return (
         <Layout>
             <div className={styles.container}>
-                <h2>{title}</h2>
+                <h3>{title}</h3>
                 <div className={styles.mainContent}>
                     <div className={styles.details}>
                         <div>
@@ -24,7 +24,7 @@ const TutorialDetails = ({ data, children }) => {
                         </div>
                     </div>
                     <div className={styles.sidebar}>
-                        <h3>TABLE OF CONTENTS</h3>
+                        <h5>TABLE OF CONTENTS</h5>
                         <ul className={styles.tableOfContents}>
                             {tableOfContents.map((item, index) => (
                                 <li key={index}>
@@ -33,7 +33,7 @@ const TutorialDetails = ({ data, children }) => {
                             ))}
                         </ul>
                         <a href={`mailto:${contact}`}>
-                            <Button buttonText="Need help?" btnSize='small' leftAlign="true" />   
+                            <Button buttonText="Need help?" btnSize='small' leftAlign="true" />
                         </a>
                     </div>
                 </div>

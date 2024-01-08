@@ -12,13 +12,14 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-ffmpeg`,
     {
       resolve: `gatsby-plugin-sharp`,
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: `src/images/logo.png`
+        icon: `src/images/bloglogo.png`
       }
     },
     {
@@ -28,6 +29,39 @@ module.exports = {
         extensions: [`.md`, `.mdx`],
         gatsbyRemarkPlugins: [
           `gatsby-remark-autolink-headers`,
+          `gatsby-remark-copy-linked-files`,
+          {
+            resolve: `gatsby-remark-videos`,
+            options: {
+              pipelines: [
+                {
+                  name: "vp9",
+                  transcode: (chain) =>
+                    chain
+                      .videoCodec("libvpx-vp9")
+                      .noAudio()
+                      .outputOptions(["-crf 20", "-b:v 0"]),
+                  maxHeight: 480,
+                  maxWidth: 900,
+                  fileExtension: "webm",
+                },
+                {
+                  name: "h264",
+                  transcode: (chain) =>
+                    chain
+                      .videoCodec("libx264")
+                      .noAudio()
+                      .addOption("-profile:v", "main")
+                      .addOption("-pix_fmt", "yuv420p")
+                      .outputOptions(["-movflags faststart"])
+                      .videoBitrate("1000k"),
+                  maxHeight: 480,
+                  maxWidth: 900,
+                  fileExtension: "mp4",
+                },
+              ],
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -51,7 +85,7 @@ module.exports = {
               //   },
               // ], //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
               containerClass: "embedVideo-container", //Optional: Custom CSS class for iframe container, for multiple classes separate them by space
-              iframeId: true, //Optional: if true, iframe's id will be set to what is provided after 'video:' (YouTube IFrame player API requires iframe id)
+              // iframeId: true, //Optional: if true, iframe's id will be set to what is provided after 'video:' (YouTube IFrame player API requires iframe id)
               // sandbox: 'allow-same-origin allow-scripts allow-presentation', // Optional: iframe sandbox options - Default: undefined
             },
           },
@@ -76,6 +110,15 @@ module.exports = {
         name: `images`,
         // Path to the directory
         path: `${__dirname}/src/images/`
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `videos`,
+        // Path to the directory
+        path: `${__dirname}/src/videos/`
       },
     },
   ],

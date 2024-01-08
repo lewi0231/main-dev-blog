@@ -9,7 +9,7 @@ import IconShopify from './IconShopify'
 import IconSpotify from './IconSpotify'
 import IconX from './IconX'
 
-const Icon = ({ name }) => {
+const getIcon = (name) => {
     switch (name) {
         case 'github':
             return <IconGithub />
@@ -30,6 +30,10 @@ const Icon = ({ name }) => {
         default:
             return <IconExternal />
     }
+}
+
+const Icon = ({ name, link }) => {
+    return <a target='_blank' rel='noreferrer' aria-label={name} href={link}>{getIcon(name)}</a>
 }
 
 export default Icon

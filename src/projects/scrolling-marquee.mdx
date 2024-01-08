@@ -3,40 +3,41 @@ title: Shopify Scrolling Marquee
 slug: shopify-marquee
 tags: ["Shopify", "Dawn", "Marquee"]
 summary: I add a scrolling marquee feature to the Dawn Shopify theme.
+iconName: github
+iconLink: https://github.com/lewi0231/shopify_code/blob/main/marquee.liquid
 date: 2021-01-04T00:00:00+00:00
 ---
 
-### TLDR
+#### TLDR
 
-Feel free to jump straight to the code below. Note this has not been tested in themes other than the Dawn theme.
+Feel free to jump straight to the code [below](#the-code). Note this has not been tested in themes other than the Dawn theme.
 
-### Introduction
+#### Introduction
 
 I recently came across a fascinating YouTube [video](https://www.youtube.com/watch?v=ygPq5nMErdg) showcasing a trending design feature – the Marquee scroller, prominently featured on sites like [MrBeast](https://mrbeast.store/). Inspired, I decided to implement a similar feature for the Shopify Dawn theme.
 
 `youtube: https://www.youtube.com/embed/D9v3lDdnHTc?si=a-nR3m8hzCpCHyiV`
 
-### Why a Marquee.
+#### Why a Marquee.
 
 Marquees add a touch of nostalgic charm and can be quite engaging. Here’s why you might consider one:
 
 - **Attention-Grabbing**: Perfect for highlighting important information.
-- **Adds Fun**: Adds Fun: Introduces a playful element to your site.
+- **Adds Fun**: Introduces a playful element to your site.
 
-### Step-by-Step Guide
+#### Step-by-Step Guide
 
-1. #### Accessing the Code Editor:
+##### 1. Accessing the Code Editor:
 
-- Go to your Shopify store's admin page.
-- Navigate to Online Store -> Themes.
-- Click on the three dots next to 'Customize', and select 'Edit code'.
+Go to your Shopify store's admin page and there, click on Online Store and then Themes.  Select the three dots next to 'Customize', and choose 'Edit code'.
 
-2. #### Creating the Marquee:
+##### 2. Creating the Marquee:
 
-- In the 'Sections' folder, create a new file named marquee.liquid.
-- Copy and paste the following code:
+In the 'Sections' folder, create a new file named marquee.liquid and then copy and paste the below code:
 
-```html file=marquee.liquid
+#### 3. The Code
+
+```HTML
 {% assign font_size_class = "text-medium" %}
 
 {% if section.settings.font_size == "small" %}
@@ -205,6 +206,6 @@ Marquees add a touch of nostalgic charm and can be quite engaging. Here’s why 
 {% endschema %}
 ```
 
-### Tailoring the Marquee
+#### Customizing your Marquee
 
 This basic marquee setup offers customization options like direction, speed, and padding. For advanced customizations (such as incorporating SVGs or unique fonts), feel free to reach out for personalized coding assistance.

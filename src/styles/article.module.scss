@@ -1,51 +1,59 @@
 .container {
     border-radius: 5px;
-    background-color: var(--tertiary);
-    height: 20em;
-    box-shadow: 0 0 2px 1px var(--secondary);
+    background-color: var(--primary-dark);
+    height: 100%;
+    box-shadow: 0 0 2px 0 var(--primary);
     padding: 1.5em 1.5em;
-    transition: box-shadow 0.5 ease;
-    transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: box-shadow 0.5 ease;
+    transition: transform 0.3s ease;
+    // opacity: 0.9;
 
     &:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 0 3px 2px var(--tertiary);
+        transform: translateY(-5px);
+        box-shadow: 0 0 3px 0 var(--primary-darkest);
         cursor: pointer;
 
         h3 {
-            color: var(--secondary);
             opacity: 1;
         }
 
         .iconsHeader .leftIcon {
             svg {
                 opacity: 1;
-                stroke-width: 1.3px;
+                stroke-width: 1px;
             }
+        }
+
+        p {
+            opacity: 1;
+        }
+
+        .tags {
+            opacity: 1;
         }
 
     }
 
 
     h3 {
-        color: var(--secondary);
-        font-size: 1.5em;
+        color: var(--secondary-light);
+        font-size: 1.2em;
         letter-spacing: -1px;
         line-height: 1.2em;
         margin-top: 10px;
-        opacity: 0.9;
+        opacity: 0.8;
         text-decoration: underline;
     }
 
 
     p {
-        color: var(--secondary);
-        font-size: 1em;
+        color: var(--secondary-light);
+        font-size: 0.95em;
         font-weight: 300;
-
+        opacity: 0.8;
         letter-spacing: -0.5px;
         line-height: 1.3em;
     }
@@ -59,9 +67,10 @@
         padding-right: 3px;
 
         .leftIcon {
+
             svg {
-                stroke-width: 1px;
-                stroke: var(--primary);
+                stroke-width: 0.8px;
+                stroke: var(--neutral-04);
                 opacity: 0.8;
                 transition: opacity 0.3s ease;
             }
@@ -73,7 +82,7 @@
             padding-top: 3px;
 
             svg {
-                stroke: var(--primary);
+                stroke: var(--neutral-04);
                 stroke-width: 1px;
                 opacity: 0.8;
                 transition: opacity 0.5s ease;
@@ -92,26 +101,28 @@
 
 
     .tags {
-        color: var(--primary);
+        color: var(--neutral-05);
         font-family: var(--mono-font);
-        font-size: 1em;
-        letter-spacing: -0.05em;
+        font-size: 0.8em;
+        letter-spacing: -0.03em;
         line-height: 1em;
         margin-top: 20px;
-        opacity: 0.7;
+        opacity: 0.9;
 
     }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     .container {
-        height: 17em;
+
         h3 {
-            font-size: 1.1em;
+            font-size: 1em;
         }
+
         p {
             font-size: 0.9em;
         }
+
         .tags {
             font-size: 0.8em;
         }
@@ -122,6 +133,7 @@
                     width: 28px;
                 }
             }
+
             .rightIcon {
                 svg {
                     width: 23px;
@@ -130,25 +142,28 @@
         }
     }
 
-    @media(max-width: 550px){
+    @media(max-width: 550px) {
         .container {
-            height: 15em;
+
             h3 {
-                font-size: 1em;
+                font-size: 0.9em;
             }
+
             p {
                 font-size: 0.8em;
             }
+
             .tags {
                 font-size: 0.8em;
             }
-    
+
             .iconsHeader {
                 .leftIcon {
                     svg {
                         width: 24px;
                     }
                 }
+
                 .rightIcon {
                     svg {
                         width: 22px;
@@ -156,25 +171,29 @@
                 }
             }
         }
+
         @media (max-width: 400px) {
             .container {
-                height: 15em;
+
                 h3 {
-                    font-size: 1em;
+                    font-size: 0.9em;
                 }
+
                 p {
                     font-size: 0.8em;
                 }
+
                 .tags {
                     font-size: 0.8em;
                 }
-        
+
                 .iconsHeader {
                     .leftIcon {
                         svg {
                             width: 25px;
                         }
                     }
+
                     .rightIcon {
                         svg {
                             width: 20px;

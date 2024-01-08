@@ -6,6 +6,7 @@ import SidebarRight from "../components/SidebarRight"
 import About from "../components/sections/About"
 import Articles from '../components/sections/Articles'
 import Hero from "../components/sections/Hero"
+import Work from '../components/sections/Work'
 import * as styles from '../styles/home.module.css'
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <About />
         <Articles />
+        <Work />
       </div>
       <SidebarRight />
     </Layout>
