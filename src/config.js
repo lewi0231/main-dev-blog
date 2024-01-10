@@ -58,7 +58,7 @@ const config = {
             ]
         }
     ],
-    logoPath: "/logoblog.png"
+    logoPath: "/circlelogo.png"
 }
 
 export default config;

@@ -17,15 +17,12 @@ const About = () => {
         <section id='about' className={styles.container}>
             <h2>A bit <span>about</span> me.</h2>
             <p>
-                After a rewarding and yet ultimately unfulfilling career in human services, I decided to follow my dream of becoming a software engineer.  This led me to completing a degree in computer science which in turn led me to a role with Fivecast (an Adelaide-based company specialising in open-sourced intelligence). There, I worked with technologies such as Typescript, React, Docker, Java, Spring, PostgreSQL.
+                Aside from being a passionate web developer, who would love to help you create your online vision, I love to travel, hike and camp.  I also enjoy writing ambient-electronic music, when inspiration strikes.  You can hear some of my music on Spotify under the pseudonym 'Decoding Seabirds'.
             </p>
             <p>
-                With a keen spirit for adventure, continuous-learning and creativity I left to explore the realm of freelancing.  Since then I have delved deeper into e-commerce solutions such as Shopify and Medusa.  Click <a href="#articles">here</a> to view some of my shopify-related articles.
+                Generally, I live a simple life, in which I value minimalism, making time for meditation and exploring creative ideas. You may be interested that I recently learned that my life's purpose should be to live each day more joyfully than the last. Feel free to ask me how I'm going with that one. :)
             </p>
-            <p>
-                Outside of coding, I'm inspired by nature and music (you can hear some of my music <a href="https://open.spotify.com/artist/5Sjxm1sfYr74l1iwTGcbJt?si=81K0QaxTSwygKywfZZK5Mg">here</a> - under the pseudonym Decoding Seabirds), which I believe influences my approach to technology.
-                
-            </p>
+
         </section>
     )
 }

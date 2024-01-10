@@ -1,0 +1,17 @@
+.container {
+    height: 100vh;
+    padding-top: 10vh;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10em;
+
+    p {
+        margin-top: 1.3em;
+        font-size: 1.3em;
+        color: var(--neutral-03);
+        font-weight: 200;
+        letter-spacing: 0.05em;
+        // margin-bottom: 0.3em;
+    }
+}

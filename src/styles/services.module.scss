@@ -1,0 +1,25 @@
+.servicesContainer {
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+
+    h4 {
+        font-size: 1.6em;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+        font-weight: 500;
+        color: var(--secondary-light);
+    }
+
+    p {
+        font-size: 1.2em;
+        letter-spacing: 0.05em;
+        color: var(--neutral-04);
+        font-weight: 400;
+        line-height: 2em;
+
+        ul {
+            padding-left: 1em;
+        }
+    }
+}

@@ -3,8 +3,6 @@ import React, { useEffect } from 'react';
 import * as styles from '../styles/navbar.module.scss';
 import Logo from './Logo';
 
-
-
 export default function Navbar() {
 
   const data = useStaticQuery(graphql`
@@ -41,11 +39,13 @@ export default function Navbar() {
 
   return (
     <nav id='navContainer' className={`${styles.navContainer} `}>
-      <Logo />
+
+      <Link id='link' to="/"> <Logo /></Link>
       <div className={styles.links} id='links'>
-        <Link id='link' to="/">home</Link>
         <Link id='link' to="/#about">about</Link>
+        <Link id='link' to="/#contact">contact</Link>
         <Link id='link' to="/#articles">tutorials</Link>
+        <Link id='link' to="/services">services</Link>
         <Link id='link' to="/#work">work</Link>
       </div>
       <button

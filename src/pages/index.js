@@ -2,9 +2,9 @@ import React from "react"
 import Layout from "../components/Layout"
 import Seo from '../components/Seo'
 import SidebarLeft from "../components/SidebarLeft"
-import SidebarRight from "../components/SidebarRight"
 import About from "../components/sections/About"
 import Articles from '../components/sections/Articles'
+import Contact from "../components/sections/Contact"
 import Hero from "../components/sections/Hero"
 import Work from '../components/sections/Work'
 import * as styles from '../styles/home.module.css'
@@ -18,8 +18,9 @@ export default function Home() {
         <About />
         <Articles />
         <Work />
+        <Contact />
       </div>
-      <SidebarRight />
+      {/* <SidebarRight /> */}
     </Layout>
   )
 }
