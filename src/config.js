@@ -45,6 +45,21 @@ const config = {
             ]
         },
         {
+            tags: ['Shopify', 'Countdown', 'Admin', 'JavaScript', 'Sale'],
+            mediaPath: '/videos/countdown.mp4',
+            mediaType: 'video',
+            content: 'I added a Sale Ending countdown to the Announcment bar section within the Header.  The message and number of hours until remaining can be customized within the section theme editor.  Hover the video to preview this feature.',
+            // href: '/articles/product-dropdown',
+            linkWord: 'here.',
+            title: 'Customizable Sale Ending Countdown',
+            icons: [
+                {
+                    name: 'github',
+                    url: 'https://github.com/lewi0231/shopify_code/blob/main/text-dropdown'
+                }
+            ]
+        },
+        {
             tags: ['Shopify', 'Collection List', 'Text', 'Overlay'],
             mediaPath: '/videos/overlay-collection.mp4',
             mediaType: 'video',
@@ -53,7 +68,7 @@ const config = {
             icons: [
                 {
                     name: 'github',
-                    url: 'https://github.com/lewi0231/shopify_code/blob/main/text-overlay'
+                    url: 'https://github.com/lewi0231/shopify_code/blob/main/countdown-timer.liquid'
                 }
             ]
         }

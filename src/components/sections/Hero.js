@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import { useSiteMetadata } from '../../hooks/use-site-metadata'
 import * as styles from '../../styles/hero.module.scss'
@@ -12,7 +13,7 @@ const Hero = () => {
             <p>Hi, my name is</p>
             <h1 className={styles.heroTitle}>Paul.</h1>
             <h1 className={styles.subtitle}>I'm a Shopify developer</h1>
-            <p className={styles.mainText}>...with a passion for web development and making things look good.  Check out some examples of my work here.
+            <p className={styles.mainText}>...with a passion for web development and making things look good.  Check out some examples of my work <Link to="#work">here</Link>.
             </p>
             <a href={`mailto:${contact}`}>
                 <Button

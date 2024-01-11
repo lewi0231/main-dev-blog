@@ -28,16 +28,22 @@
     }
 
     .mainText {
-        color: var(--secondary-lighter);
-        font-size: 1.7em;
-        font-weight: 500;
+        color: var(--secondary-lightest);
+        font-size: 1.6em;
+        font-weight: 200;
         line-height: 1.3em;
         margin-top: 1em;
         opacity: 0.8;
     }
 
     a {
-        color: var(--tertiary);
+        color: var(--primary-lightest-lightest);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            color: var(--primary-lightest-lighter);
+        }
     }
 
 }

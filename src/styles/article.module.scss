@@ -9,7 +9,21 @@
     justify-content: space-between;
     transition: box-shadow 0.5 ease;
     transition: transform 0.3s ease;
-    // opacity: 0.9;
+    position: relative;
+    // opacity: 0.7;
+
+    &::before {
+        content: "";
+        background-image: url("/static/nnnoise.svg");
+        background-repeat: repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+
+    }
 
     &:hover {
         transform: translateY(-5px);
