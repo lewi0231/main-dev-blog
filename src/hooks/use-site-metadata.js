@@ -9,6 +9,7 @@ export const useSiteMetadata = () => {
             title
             description
             contact
+            siteUrl
           }
         }
       }

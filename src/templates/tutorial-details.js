@@ -2,6 +2,7 @@ import { graphql } from 'gatsby'
 import React from 'react'
 import Button from '../components/Button'
 import Layout from '../components/Layout'
+import Seo from '../components/Seo'
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 import * as styles from '../styles/tutorial-details.module.scss'
 
@@ -59,5 +60,15 @@ export const query = graphql`
         }
     }
 `
+
+export const Head = ({ data }) => {
+    const { title, summary } = data.mdx.frontmatter
+    console.log(title)
+    console.log(summary)
+    return (
+        <Seo title={title} description={summary} />
+    )
+}
+
 
 export default TutorialDetails

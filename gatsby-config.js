@@ -123,8 +123,9 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: 'Studio Dev',
-    description: 'A portfolio website',
-    contact: 'studio.dev888@gmail.com'
+    title: 'Studio Dev - Paul Lewis - Shopify Web Developer',
+    description: 'I offer Shopify theme customization and web development services',
+    contact: 'studio.dev888@gmail.com',
+    siteUrl: 'https://studiodev.ink'
   },
 }
