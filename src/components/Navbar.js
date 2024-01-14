@@ -39,8 +39,9 @@ export default function Navbar() {
 
   return (
     <nav id='navContainer' className={`${styles.navContainer} `}>
-
-      <Link id='link' to="/"> <Logo /></Link>
+      <Link id='link' to="/">
+        <Logo />
+      </Link>
       <div className={styles.links} id='links'>
         <Link id='link' to="/#about">about</Link>
         <Link id='link' to="/#contact">contact</Link>

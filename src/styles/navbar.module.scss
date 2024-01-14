@@ -6,6 +6,10 @@
     padding: 0em 2em;
     width: 100vw;
 
+    .link {
+        margin-left: 0;
+    }
+
     .links {
         a {
             color: var(--secondary-light);
