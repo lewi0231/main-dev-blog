@@ -7,10 +7,12 @@ import { useSiteMetadata } from '../hooks/use-site-metadata'
 import * as styles from '../styles/tutorial-details.module.scss'
 
 
-const TutorialDetails = ({ data, children }) => {
-    const { title } = data.mdx.frontmatter
 
+const TutorialDetails = ({ data, children }) => {
+    const { title, author, date } = data.mdx.frontmatter
     const tableOfContents = data.mdx.tableOfContents.items
+
+    const authorDate = new Date(date);
 
     const { contact } = useSiteMetadata()
 
@@ -18,6 +20,10 @@ const TutorialDetails = ({ data, children }) => {
         <Layout>
             <div className={styles.container}>
                 <h3>{title}</h3>
+                <div>
+                    <p>Written by {author}</p>
+                    <p>{authorDate.toISOString().substring(0, 10)}</p>
+                </div>
                 <div className={styles.mainContent}>
                     <div className={styles.details}>
                         <div>
@@ -51,6 +57,8 @@ export const query = graphql`
             tags
             summary
             slug
+            date
+            author
             }
             internal {
             contentFilePath

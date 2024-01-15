@@ -14,6 +14,7 @@ export const useMarkdownRemark = () => {
                         summary
                         iconName
                         iconLink
+                        author
                     }
                     id
                     internal {
